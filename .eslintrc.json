@@ -15,11 +15,19 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "import"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "import",
+    "simple-import-sort"
+  ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   },
   "settings": {
     "import/resolver": {
