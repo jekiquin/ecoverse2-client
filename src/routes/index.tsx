@@ -1,9 +1,15 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouteObject } from 'react-router-dom';
 
-import { routes } from './routes';
+import Home from './Home';
+import Projects from './Projects';
 
-const router = createBrowserRouter(routes);
-
-export default function Router() {
-  return <RouterProvider router={router} />;
-}
+export const routes: RouteObject[] = [
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/projects',
+    element: <Projects />,
+  },
+];
