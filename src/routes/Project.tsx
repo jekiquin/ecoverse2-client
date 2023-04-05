@@ -1,3 +1,5 @@
+import Layout from '@/components/base/Layout';
+
 export default function Project() {
-  return <div>Project</div>;
+  return <Layout>Project</Layout>;
 }
