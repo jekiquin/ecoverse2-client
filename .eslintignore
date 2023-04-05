@@ -1,1 +1,3 @@
 .lintstagedrc.cjs
+tailwind.config.cjs
+postcss.config.cjs
