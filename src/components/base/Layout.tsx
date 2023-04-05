@@ -10,9 +10,7 @@ Layout.defaultProps = {
 };
 
 export default function Layout({ children, className }: Props) {
-  return (
-    <section className={twMerge(styles.root, className)}>{children}</section>
-  );
+  return <div className={twMerge(styles.root, className)}>{children}</div>;
 }
 
 const styles = {
