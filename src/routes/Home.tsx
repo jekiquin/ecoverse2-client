@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
 
-import Navigation from '@/components/Navigation';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
     <main>
-      <Navigation />
+      <Header />
       <Outlet />
     </main>
   );
