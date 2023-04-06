@@ -1,9 +1,11 @@
 import { Outlet } from 'react-router-dom';
 
+import Navigation from '@/components/Navigation';
+
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <Navigation />
       <Outlet />
     </main>
   );

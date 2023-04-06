@@ -7,9 +7,17 @@ import Onboarding from './Onboarding';
 import Project from './Project';
 import Projects from './Projects';
 
+export enum ROUTES {
+  HOME = '/',
+  MAP = '/map',
+  PROJECTS = '/projects',
+  PROJECT = '/project',
+  ONBOARDING = '/onboarding',
+}
+
 export const routes: RouteObject[] = [
   {
-    path: '/',
+    path: ROUTES.HOME,
     element: <Home />,
     errorElement: <NotFound />,
     children: [
@@ -18,18 +26,18 @@ export const routes: RouteObject[] = [
         element: <Map />,
       },
       {
-        path: '/projects',
+        path: ROUTES.PROJECTS,
         element: <Projects />,
       },
       {
-        path: '/projects/:id',
+        path: `${ROUTES.PROJECTS}/:id`,
         element: <Project />,
       },
     ],
   },
 
   {
-    path: '/onboarding',
+    path: ROUTES.ONBOARDING,
     element: <Onboarding />,
   },
 ];
