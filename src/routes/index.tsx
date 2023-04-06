@@ -9,7 +9,6 @@ import Projects from './Projects';
 
 export enum ROUTES {
   HOME = '/',
-  MAP = '/map',
   PROJECTS = '/projects',
   PROJECT = '/project',
   ONBOARDING = '/onboarding',
