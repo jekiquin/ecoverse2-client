@@ -1,5 +1,5 @@
-import logoMobile from '@/assets/images/icon.svg';
-import logoDesktop from '@/assets/images/master-logo.svg';
+import logoIcon from '@/assets/images/icon.svg';
+import logoFull from '@/assets/images/master-logo.svg';
 
 export const MOBILE = 768;
 
@@ -8,7 +8,12 @@ export enum Device {
   desktop,
 }
 
+export enum LogoStyle {
+  icon,
+  full,
+}
+
 export const logo = {
-  [Device.mobile]: logoMobile,
-  [Device.desktop]: logoDesktop,
+  [LogoStyle.icon]: logoIcon,
+  [LogoStyle.full]: logoFull,
 };
