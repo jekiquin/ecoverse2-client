@@ -4,9 +4,16 @@ import Header from '@/components/Header';
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.root}>
       <Header />
-      <Outlet />
+      <div className={styles.outlet}>
+        <Outlet />
+      </div>
     </main>
   );
 }
+
+const styles = {
+  root: 'flex justify-stretch',
+  outlet: 'flex-grow',
+};
