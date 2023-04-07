@@ -4,17 +4,20 @@ import { logo, LogoStyle } from '@/utils/constants';
 
 type Props = {
   className: string;
+  isFull: boolean;
 };
 
 Logo.defaultProps = {
   className: '',
+  isFull: true,
 };
 
-export default function Logo({ className }: Props) {
+export default function Logo({ className, isFull }: Props) {
+  const logoStyle = isFull ? LogoStyle.full : LogoStyle.icon;
   return (
     <div className={twMerge(styles.root, className)}>
       <img
-        src={logo[LogoStyle.icon]}
+        src={logo[LogoStyle.full]}
         alt="ecoverse home"
         className={styles.img}
       />
@@ -24,5 +27,5 @@ export default function Logo({ className }: Props) {
 
 const styles = {
   root: 'h-6 w-auto',
-  img: 'h-full w-aut',
+  img: 'h-full w-full object-cover object-left',
 };

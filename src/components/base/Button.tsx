@@ -22,5 +22,5 @@ export default function Button({ className, onClick, children }: Props) {
 }
 
 const styles = {
-  root: 'px-2 py-1 rounded-lg',
+  root: 'px-2 py-1 rounded-lg cursor-pointer',
 };
