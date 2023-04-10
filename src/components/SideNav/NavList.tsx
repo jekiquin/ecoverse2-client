@@ -4,13 +4,10 @@ import { ROUTES } from '@/routes';
 import ProjectsIcon from '../icons/ProjectsIcons';
 import NavAccount from './NavAccount';
 import NavItem from './NavItem';
+import NavLogo from './NavLogo';
 import { INavItem } from './types';
 
-type Props = {
-  navOpen: boolean;
-};
-
-export default function NavList({ navOpen }: Props) {
+export default function NavList() {
   const navItems: INavItem[] = [
     {
       label: 'Home',
@@ -28,16 +25,17 @@ export default function NavList({ navOpen }: Props) {
 
   return (
     <ul className={styles.root}>
+      <NavLogo />
       {navItems.map((item) => (
-        <NavItem key={item.label} navOpen={navOpen} {...item} />
+        <NavItem key={item.label} {...item} />
       ))}
       <li className={styles.divider}></li>
-      <NavAccount navOpen={navOpen} />
+      <NavAccount />
     </ul>
   );
 }
 
 const styles = {
-  root: 'my-12 flex flex-col gap-6 h-full',
+  root: 'flex flex-col gap-6 h-full',
   divider: 'mt-auto h-1 w-full bg-slate-200',
 };

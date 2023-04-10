@@ -1,14 +1,17 @@
 import { Outlet } from 'react-router-dom';
 
 import SideNav from '@/components/SideNav';
+import NavProvider from '@/context/NavContext';
 
 export default function Home() {
   return (
     <main className={styles.root}>
-      <SideNav />
-      <div className={styles.outlet}>
-        <Outlet />
-      </div>
+      <NavProvider>
+        <SideNav />
+        <div className={styles.outlet}>
+          <Outlet />
+        </div>
+      </NavProvider>
     </main>
   );
 }

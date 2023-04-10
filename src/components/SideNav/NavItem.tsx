@@ -5,7 +5,6 @@ import { twMerge } from 'tailwind-merge';
 import { INavItem } from './types';
 
 interface Props extends INavItem {
-  navOpen: boolean;
   className: string;
 }
 
@@ -18,11 +17,10 @@ export default function NavItem({
   href,
   Icon,
   isPrivate,
-  navOpen,
   className,
 }: Props) {
   return (
-    <li className={twMerge(className, styles.root)}>
+    <li className={twMerge(styles.root, className)}>
       <NavLink to={href} className={styles.link}>
         <Icon className={styles.icon} />
         <p className={styles.label}>{label}</p>
@@ -32,8 +30,8 @@ export default function NavItem({
 }
 
 const styles = {
-  root: 'overflow-hidden',
-  link: 'flex items-center gap-4',
-  icon: 'h-6 w-6 grow-0 shrink-0',
+  root: 'overflow-hidden h-6',
+  link: 'flex items-center gap-4 h-full',
+  icon: 'h-full w-auto grow-0 shrink-0',
   label: 'shrink-1',
 };

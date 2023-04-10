@@ -6,11 +6,7 @@ import { ROUTES } from '@/routes';
 
 import NavItem from './NavItem';
 
-type Props = {
-  navOpen: boolean;
-};
-
-export default function NavAccount({ navOpen }: Props) {
+export default function NavAccount() {
   const log = {
     in: {
       label: 'Login',
@@ -25,5 +21,5 @@ export default function NavAccount({ navOpen }: Props) {
       isPrivate: false,
     },
   };
-  return <NavItem {...log.in} navOpen={navOpen} />;
+  return <NavItem {...log.in} />;
 }
