@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import Button from './base/Button';
-import LeftChevron from './icons/LeftChevron';
+import Button from '@/components/base/Button';
+import LeftChevron from '@/components/icons/LeftChevron';
+
+import NavList from './NavList';
 
 export default function SideNav() {
   const [navOpen, setNavOpen] = useState<boolean>(true);
@@ -19,6 +21,7 @@ export default function SideNav() {
       >
         <LeftChevron className={styles.buttonImg} />
       </Button>
+      <NavList navOpen={navOpen} />
     </nav>
   );
 }
