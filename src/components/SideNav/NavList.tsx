@@ -2,6 +2,7 @@ import MapIcon from '@/components/icons/MapIcon';
 import { ROUTES } from '@/routes';
 
 import ProjectsIcon from '../icons/ProjectsIcons';
+import NavAccount from './NavAccount';
 import NavItem from './NavItem';
 import { INavItem } from './types';
 
@@ -26,10 +27,17 @@ export default function NavList({ navOpen }: Props) {
   ];
 
   return (
-    <ul>
+    <ul className={styles.root}>
       {navItems.map((item) => (
         <NavItem key={item.label} navOpen={navOpen} {...item} />
       ))}
+      <li className={styles.divider}></li>
+      <NavAccount navOpen={navOpen} />
     </ul>
   );
 }
+
+const styles = {
+  root: 'my-12 flex flex-col gap-6 h-full',
+  divider: 'mt-auto h-1 w-full bg-slate-200',
+};

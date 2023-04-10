@@ -27,10 +27,10 @@ export default function SideNav() {
 }
 
 const styles = {
-  root: 'h-screen w-20 py-4 px-2 flex flex-col relative transition-all border',
-  navOpen: 'w-56',
+  root: 'h-screen w-16 py-4 px-4 flex flex-col relative transition-all border',
+  navOpen: 'w-36',
   button:
-    'absolute w-10 h-10 p-3 border rounded-full rotate-180 right-0 translate-x-2/4 z-10 transition-all bg-white',
+    'absolute z-10 w-8 h-8 flex justify-center items-center border rounded-full rotate-180 right-0 translate-x-2/4  transition-all bg-white',
   buttonRotate: 'rotate-0',
-  buttonImg: 'h-full w-full',
+  buttonImg: 'h-4 w-4',
 };

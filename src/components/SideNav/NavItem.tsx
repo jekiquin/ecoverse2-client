@@ -6,7 +6,12 @@ import { INavItem } from './types';
 
 interface Props extends INavItem {
   navOpen: boolean;
+  className: string;
 }
+
+NavItem.defaultProps = {
+  className: '',
+};
 
 export default function NavItem({
   label,
@@ -14,23 +19,21 @@ export default function NavItem({
   Icon,
   isPrivate,
   navOpen,
+  className,
 }: Props) {
   return (
-    <li className={styles.root}>
+    <li className={twMerge(className, styles.root)}>
       <NavLink to={href} className={styles.link}>
         <Icon className={styles.icon} />
-        <p className={twMerge(styles.label, navOpen && styles.showLabel)}>
-          {label}
-        </p>
+        <p className={styles.label}>{label}</p>
       </NavLink>
     </li>
   );
 }
 
 const styles = {
-  root: '',
-  link: 'flex items-center gap-2',
+  root: 'overflow-hidden',
+  link: 'flex items-center gap-4',
   icon: 'h-6 w-6 grow-0 shrink-0',
-  label: 'w-0 overflow-hidden',
-  showLabel: 'w-full',
+  label: 'shrink-1',
 };
