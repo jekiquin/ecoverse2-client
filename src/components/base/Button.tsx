@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import { defaultVoidFunction } from '@/utils';
+import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
 
 interface Props extends PropsWithChildren {
   className: string;
@@ -9,7 +10,7 @@ interface Props extends PropsWithChildren {
 }
 
 Button.defaultProps = {
-  className: '',
+  ...DEFAULT_CLASSNAME_PROPS,
   onClick: defaultVoidFunction,
 };
 
