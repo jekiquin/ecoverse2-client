@@ -32,5 +32,5 @@ const styles = {
   button:
     'absolute z-10 top-11 right-0 translate-x-2/4 w-8 h-8 flex justify-center items-center border rounded-full rotate-180 transition-all bg-white',
   buttonRotate: 'rotate-0',
-  buttonImg: 'h-4 w-4',
+  buttonImg: 'h-4 w-4 opacity-50 transition-all hover:opacity-100',
 };

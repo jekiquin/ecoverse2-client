@@ -10,7 +10,7 @@ import { INavItem } from './types';
 export default function NavList() {
   const navItems: INavItem[] = [
     {
-      label: 'Home',
+      label: 'Map',
       Icon: MapIcon,
       href: ROUTES.HOME,
       isPrivate: false,
