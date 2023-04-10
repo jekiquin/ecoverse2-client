@@ -4,6 +4,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { useNavContext } from '@/context/NavContext';
 import useShowToolTip from '@/hooks/useShowToolTip';
+import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
 
 import { INavItem } from './types';
 
@@ -11,9 +12,7 @@ interface Props extends INavItem {
   className: string;
 }
 
-NavItem.defaultProps = {
-  className: '',
-};
+NavItem.defaultProps = DEFAULT_CLASSNAME_PROPS;
 
 export default function NavItem({
   label,
