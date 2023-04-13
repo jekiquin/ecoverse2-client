@@ -11,6 +11,6 @@ export default function BottomNav() {
 }
 
 const styles = {
-  root: 'relative overflow-x-hidden md:hidden ',
-  list: 'w-full flex justify-evenly align-center px-8 py-4',
+  root: 'relative overflow-x-hidden px-8 py-4 md:hidden ',
+  list: 'w-full flex justify-evenly items-center',
 };

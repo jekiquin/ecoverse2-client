@@ -1,17 +1,25 @@
 import { Link } from 'react-router-dom';
+import { twMerge } from 'tailwind-merge';
 
 import EcoverseIcon from '@/components/icons/EcoverseIcon';
+import EcoverseIconFull from '@/components/icons/EcoverseIconFull';
 import { useNavContext } from '@/context/NavContext';
 
-import EcoverseIconFull from '../icons/EcoverseIconFull';
+type Props = {
+  className: string;
+};
 
-export default function NavLogo() {
+NavLogo.defaultProps = {
+  className: '',
+};
+
+export default function NavLogo({ className }: Props) {
   const { navOpen } = useNavContext();
 
   const Icon = navOpen ? EcoverseIconFull : EcoverseIcon;
 
   return (
-    <li className={styles.root}>
+    <li className={twMerge(styles.root, className)}>
       <Link to="/" className={styles.link}>
         <Icon className={styles.icon} />
       </Link>

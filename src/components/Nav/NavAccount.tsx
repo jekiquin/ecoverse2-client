@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Login from '@/components/icons/Login';
 import Logout from '@/components/icons/Logout';
 import { ROUTES } from '@/routes';
