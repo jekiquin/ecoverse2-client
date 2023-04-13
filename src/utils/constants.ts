@@ -13,6 +13,6 @@ export const logo = {
   [LogoStyle.full]: logoFull,
 };
 
-export const DEFAULT_CLASSNAME_PROPS = {
+export const defaultClassNameProps = {
   className: '',
 };

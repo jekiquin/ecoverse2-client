@@ -1,8 +1,8 @@
-import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
+import { defaultClassNameProps } from '@/utils/constants';
 
 import Icon, { IconClassName } from './Icon';
 
-Login.defaultProps = DEFAULT_CLASSNAME_PROPS;
+Login.defaultProps = defaultClassNameProps;
 
 export default function Login({ className }: IconClassName) {
   return (

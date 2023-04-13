@@ -1,8 +1,8 @@
-import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
+import { defaultClassNameProps } from '@/utils/constants';
 
 import Icon, { IconClassName } from './Icon';
 
-ProjectsIcon.defaultProps = DEFAULT_CLASSNAME_PROPS;
+ProjectsIcon.defaultProps = defaultClassNameProps;
 
 export default function ProjectsIcon({ className }: IconClassName) {
   return (

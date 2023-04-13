@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
+import { defaultClassNameProps } from '@/utils/constants';
 
 export type IconClassName = {
   className: string;
@@ -13,7 +13,7 @@ interface Props extends PropsWithChildren {
 }
 
 Icon.defaultProps = {
-  ...DEFAULT_CLASSNAME_PROPS,
+  ...defaultClassNameProps,
   viewBox: [0, 0, 448, 512],
 };
 

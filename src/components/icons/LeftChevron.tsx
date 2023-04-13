@@ -1,8 +1,8 @@
-import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
+import { defaultClassNameProps } from '@/utils/constants';
 
 import Icon, { IconClassName } from './Icon';
 
-LeftChevron.defaultProps = DEFAULT_CLASSNAME_PROPS;
+LeftChevron.defaultProps = defaultClassNameProps;
 
 export default function LeftChevron({ className }: IconClassName) {
   return (

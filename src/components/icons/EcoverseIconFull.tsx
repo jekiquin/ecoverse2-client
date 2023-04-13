@@ -1,8 +1,8 @@
-import { DEFAULT_CLASSNAME_PROPS } from '@/utils/constants';
+import { defaultClassNameProps } from '@/utils/constants';
 
 import Icon, { IconClassName } from './Icon';
 
-EcoverseIconFull.defaultProps = DEFAULT_CLASSNAME_PROPS;
+EcoverseIconFull.defaultProps = defaultClassNameProps;
 
 export default function EcoverseIconFull({ className }: IconClassName) {
   return (
