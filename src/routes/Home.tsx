@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import SideNav from '@/components/SideNav';
+import SideNav from '@/components/Nav/SideNav';
 import NavProvider from '@/context/NavContext';
 
 export default function Home() {
