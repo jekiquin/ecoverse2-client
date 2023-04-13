@@ -13,6 +13,6 @@ export default function Content() {
   );
 }
 const styles = {
-  root: 'absolute inset-0 md:ml-16',
+  root: 'absolute top-0 left-0 right-0 mt-12 mb-16 content-mobile overflow-y-auto md:h-screen md:ml-16 md:my-0',
   offset: '',
 };

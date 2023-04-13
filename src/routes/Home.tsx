@@ -18,5 +18,5 @@ export default function Home() {
 }
 
 const styles = {
-  root: 'relative h-screen w-screen overflow-y-auto overflow-x-hidden',
+  root: 'relative h-screen w-screen overflow-hidden',
 };

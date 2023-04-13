@@ -14,4 +14,8 @@
   .custom-tooltip:hover .custom-tooltip__ctx.custom-tooltip__ctx--closed {
     @apply hidden opacity-0;
   }
+
+  .content-mobile {
+    height: calc(100vh - theme(spacing.24));
+  }
 }
