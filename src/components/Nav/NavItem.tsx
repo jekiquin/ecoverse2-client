@@ -38,7 +38,7 @@ const styles = {
   root: 'overflow-hidden h-6 bg-white custom-tooltip',
   link: 'flex items-center gap-4 h-full',
   icon: 'h-full w-auto grow-0 shrink-0',
-  label: 'shrink-1 w-full',
+  label: 'shrink-1 w-full hidden md:block',
   tooltip: 'custom-tooltip__ctx',
   tooltipClosed: 'custom-tooltip__ctx--closed',
 };

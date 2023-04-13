@@ -4,7 +4,7 @@ import Button from '@/components/base/Button';
 import LeftChevron from '@/components/icons/LeftChevron';
 import { useNavContext } from '@/context/NavContext';
 
-import NavList from './NavList';
+import SideNavList from './SideNavList';
 
 export default function SideNav() {
   const { navOpen, setNavOpen } = useNavContext();
@@ -21,7 +21,7 @@ export default function SideNav() {
       >
         <LeftChevron className={styles.buttonImg} />
       </Button>
-      <NavList />
+      <SideNavList />
     </nav>
   );
 }
