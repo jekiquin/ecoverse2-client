@@ -6,6 +6,7 @@ import React, {
 } from 'react';
 
 import { defaultVoidFunction } from '@/utils';
+import { MOBILE } from '@/utils/constants';
 
 type INavContext = {
   navOpen: boolean;
@@ -22,7 +23,7 @@ const NavContext = createContext<INavContext>(defaultValue);
 export const useNavContext = () => useContext(NavContext);
 
 export default function NavProvider({ children }: PropsWithChildren) {
-  const [navOpen, setNavOpen] = useState<boolean>(true);
+  const [navOpen, setNavOpen] = useState<boolean>(window.innerWidth >= MOBILE);
 
   return (
     <NavContext.Provider value={{ navOpen, setNavOpen }}>
