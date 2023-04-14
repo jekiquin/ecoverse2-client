@@ -12,7 +12,7 @@
 @layer components {
   /* ---------------------------------- tooltip -------------------------------------- */
   .custom-tooltip .custom-tooltip__ctx {
-    @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-black text-white;
+    @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-black text-white text-sm;
   }
 
   .custom-tooltip:hover .custom-tooltip__ctx {
