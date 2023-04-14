@@ -10,6 +10,9 @@ module.exports = {
       '2xl': '1960px',
     },
     extend: {
+      spacing: {
+        18: '4.5rem',
+      },
       colors: {
         white: '#FBFBFB',
         black: '#606060',

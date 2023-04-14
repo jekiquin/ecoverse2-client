@@ -10,6 +10,7 @@
 }
 
 @layer components {
+  /* ---------------------------------- tooltip -------------------------------------- */
   .custom-tooltip .custom-tooltip__ctx {
     @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-primary text-white;
   }
@@ -24,5 +25,20 @@
 
   .content-mobile {
     height: calc(100vh - theme(spacing.24));
+  }
+
+  /* ---------------------------------- routerlink -------------------------------------- */
+  .rrd-link .rrd-link__icon {
+    @apply transition-colors;
+  }
+
+  .rrd-link.active,
+  .rrd-link:hover {
+    @apply bg-primary;
+  }
+
+  .rrd-link.active .rrd-link__icon,
+  .rrd-link:hover .rrd-link__icon {
+    @apply fill-white;
   }
 }

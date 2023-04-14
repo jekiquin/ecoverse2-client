@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, NavLinkProps } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
 import { useNavContext } from '@/context/NavContext';
@@ -35,9 +35,9 @@ export default function NavItem({
 }
 
 const styles = {
-  root: 'overflow-hidden h-6 bg-white custom-tooltip',
-  link: 'flex items-center gap-4 h-full',
-  icon: 'h-full w-auto grow-0 shrink-0 fill-primary',
+  root: 'overflow-hidden bg-white custom-tooltip',
+  link: 'flex items-center gap-6 h-8 p-1 rounded-md rrd-link',
+  icon: 'h-7 w-7 grow-0 shrink-0 fill-primary rrd-link__icon',
   label: 'shrink-1 w-full hidden md:block',
   tooltip: 'custom-tooltip__ctx',
   tooltipClosed: 'custom-tooltip__ctx--closed',

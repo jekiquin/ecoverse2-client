@@ -27,7 +27,7 @@ export default function SideNav() {
 }
 
 const styles = {
-  root: 'fixed top-0 left-0 z-10 h-screen w-16 py-4 px-4 flex flex-col transition-all border hidden bg-white md:block',
+  root: 'fixed top-0 left-0 z-10 h-screen w-18 py-4 px-4 flex flex-col transition-all border hidden bg-white md:block',
   navOpen: 'w-48',
   button:
     'absolute z-10 top-11 right-0 translate-x-2/4 w-8 h-8 flex justify-center items-center border rounded-full rotate-180 transition-all bg-white',
