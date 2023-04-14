@@ -13,7 +13,7 @@ export default function TopNav() {
 }
 
 const styles = {
-  root: 'fixed top-0 left-0 right-0 z-10 overflow-x-hidden px-4 py-2 bg-white md:hidden',
+  root: 'fixed top-0 left-0 right-0 z-10 overflow-x-hidden px-4 py-2 bg-white border-solid border-b-2 border-accent rounded-md shadow-topNav md:hidden',
   logo: 'mb-0 ml-0',
   list: 'w-full flex justify-between items-center',
 };

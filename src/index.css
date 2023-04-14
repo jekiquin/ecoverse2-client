@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    color: #606060;
+    background-color: #fbfbfb;
+  }
+}
+
 @layer components {
   .custom-tooltip .custom-tooltip__ctx {
-    @apply absolute hidden opacity-0 left-full ml-1 px-4 py-2 rounded-lg bg-white;
+    @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-primary text-white;
   }
 
   .custom-tooltip:hover .custom-tooltip__ctx {
