@@ -12,7 +12,7 @@
 @layer components {
   /* ---------------------------------- tooltip -------------------------------------- */
   .custom-tooltip .custom-tooltip__ctx {
-    @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-primary text-white;
+    @apply absolute hidden opacity-0 left-full ml-1 px-2 py-1 rounded-lg bg-black text-white;
   }
 
   .custom-tooltip:hover .custom-tooltip__ctx {
@@ -23,13 +23,14 @@
     @apply hidden opacity-0;
   }
 
+  /* ---------------------------------- main content -------------------------------------- */
   .content-mobile {
     height: calc(100vh - theme(spacing.24));
   }
 
   /* ---------------------------------- routerlink -------------------------------------- */
   .rrd-link .rrd-link__icon {
-    @apply transition-colors;
+    @apply transition-colors duration-500;
   }
 
   .rrd-link.active,

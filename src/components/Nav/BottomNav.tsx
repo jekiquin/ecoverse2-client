@@ -11,6 +11,6 @@ export default function BottomNav() {
 }
 
 const styles = {
-  root: 'fixed bottom-0 right-0 left-0 z-10 overflow-x-hidden px-8 py-4 bg-white border-solid border-t-2 border-accent rounded-md shadow-bottomNav md:hidden',
+  root: 'fixed bottom-0 right-0 left-0 z-10 overflow-hidden px-8 py-4 bg-white border-solid border-t-2 border-accent rounded-md shadow-bottomNav md:hidden',
   list: 'w-full flex justify-evenly items-center',
 };
