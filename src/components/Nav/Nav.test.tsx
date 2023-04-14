@@ -43,7 +43,7 @@ describe('Testing Nav Components', () => {
       user = userEvent.setup();
     });
 
-    test.each(cases)('%s should be active when clicked', async (label) => {
+    test.each(cases)('%s link should be active when clicked', async (label) => {
       render(
         <ul>
           <NavListItems />
